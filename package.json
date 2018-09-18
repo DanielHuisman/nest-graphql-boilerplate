@@ -26,11 +26,17 @@
   "dependencies": {
     "@nestjs/common": "^5.3.7",
     "@nestjs/core": "^5.3.7",
+    "@nestjs/graphql": "^5.3.1",
+    "apollo-server-express": "^2.0.7",
+    "graphql": "^14.0.2",
+    "graphql-tools": "^3.1.1",
+    "helmet": "^3.13.0",
     "reflect-metadata": "^0.1.12",
     "rxjs": "^6.3.2"
   },
   "devDependencies": {
     "@nestjs/testing": "^5.3.7",
+    "@types/helmet": "^0.0.41",
     "@types/jest": "^23.3.2",
     "@types/node": "^10.10.1",
     "jest": "^23.6.0",
