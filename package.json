@@ -1,0 +1,43 @@
+{
+  "name": "nest-graphql-boilerplate",
+  "description": "Boilerplate for Nest server with TypeORM and GraphQL.",
+  "version": "0.1.0",
+  "license": "MIT",
+  "author": "Daniel Huisman <daniel@huisman.me> (https://danielhuisman.io)",
+  "repository": "github:DanielHuisman/nest-graphql-boilerplate",
+  "keywords": [
+    "boilerplate",
+    "nest",
+    "server",
+    "typeorm",
+    "graphql"
+  ],
+  "scripts": {
+    "clean": "rimraf dist",
+    "lint": "tslint -p tsconfig.json -c tslint.json",
+    "lint:fix": "yarn run lint --fix",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "build": "yarn run clean && tsc",
+    "start": "node dist/main.js",
+    "dev": "nodemon"
+  },
+  "dependencies": {
+    "@nestjs/common": "^5.3.7",
+    "@nestjs/core": "^5.3.7",
+    "reflect-metadata": "^0.1.12",
+    "rxjs": "^6.3.2"
+  },
+  "devDependencies": {
+    "@nestjs/testing": "^5.3.7",
+    "@types/jest": "^23.3.2",
+    "@types/node": "^10.10.1",
+    "jest": "^23.6.0",
+    "nodemon": "^1.18.4",
+    "rimraf": "^2.6.2",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.11.0",
+    "typescript": "^3.0.3"
+  }
+}
